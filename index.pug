@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    script(src="https://cdn.plot.ly/plotly-latest.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/sweetalert2@10")
+    script(src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous")
+    link(rel="shortcut icon", href="img/favico.png", type="image/x-icon")
+    link(rel="stylesheet", href="css/css/main.css")
+    title Graphic +
+
+  body
+    .wrap
+      .grid__home
+        form.form#form__id
+          .form__container__inputs
+            .form__wrap
+              input(type="text" placeholder="Parámetro").form__parametro.form__input
+              input(type="number" placeholder="Frecuencia").form__valor.form__input
+            .form__wrap
+              input(type="text" placeholder="Parámetro").form__parametro.form__input
+              input(type="number" placeholder="Frecuencia").form__valor.form__input
+          .form__container__buttons
+            .form__wrap__buttons
+              button(type="button").switch#switch
+                span
+                  i.fas.fa-sun
+                span
+                  i.fas.fa-moon
+              button(type="button").form__add.form__button Agregar Parámetro
+              button(type="button").form__show.form__button Mostrar Gráfico
+
+        .grafico#grafico
+
+    script(src="js/main-dist.js")

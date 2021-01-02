@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favico.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/css/main.css"/>
+    <title>Graphic +</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="grid__home">
+        <form class="form" id="form__id">
+          <div class="form__container__inputs">
+            <div class="form__wrap">
+              <input class="form__parametro form__input" type="text" placeholder="Parámetro"/>
+              <input class="form__valor form__input" type="number" placeholder="Frecuencia"/>
+            </div>
+            <div class="form__wrap">
+              <input class="form__parametro form__input" type="text" placeholder="Parámetro"/>
+              <input class="form__valor form__input" type="number" placeholder="Frecuencia"/>
+            </div>
+          </div>
+          <div class="form__container__buttons">
+            <div class="form__wrap__buttons">
+              <button class="switch" type="button" id="switch"><span><i class="fas fa-sun"></i></span><span><i class="fas fa-moon"></i></span></button>
+              <button class="form__add form__button" type="button">Agregar Parámetro</button>
+              <button class="form__show form__button" type="button">Mostrar Gráfico</button>
+            </div>
+          </div>
+        </form>
+        <div class="grafico" id="grafico"></div>
+      </div>
+    </div>
+    <script src="js/main-dist.js"></script>
+  </body>
+</html>
